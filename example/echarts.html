@@ -1,0 +1,707 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../dist/css/simple.css">
+</head>
+
+<body class="body-fixed">
+    <a class="downHtml" href="#" download="downImg" onclick="downloadHTML()">download</a>
+    <h1>Simple CSS With echarts </h1>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="well">
+                <div class="panel panel-simple">
+                    <div class="panel-heading">ECharts 入门示例</div>
+                    <div class="panel-body">
+                        <div class="nopadding-well">
+                            <div id="main" style="width: 100%;height:300px;">
+                            </div>
+                            <script type="text/javascript">
+                                // 基于准备好的dom，初始化echarts实例
+                                var myChart = echarts.init(document.getElementById('main'));
+
+                                // 指定图表的配置项和数据
+                                var option = {
+                                    tooltip: {},
+                                    legend: {
+                                        data: ['销量']
+                                    },
+                                    xAxis: {
+                                        data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+                                    },
+                                    yAxis: {},
+                                    series: [{
+                                        name: '销量',
+                                        type: 'bar',
+                                        data: [5, 20, 36, 10, 10, 20]
+                                    }]
+                                };
+
+                                // 使用刚指定的配置项和数据显示图表。
+                                myChart.setOption(option);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="well">
+                <div class="panel panel-simple">
+                    <div class="panel-heading">某站点用户访问来源</div>
+                    <div class="panel-body">
+                        <div class="nopadding-well">
+                            <div id="main2" style="width: 100%;height:300px;">
+                            </div>
+                            <script type="text/javascript">
+                                // 基于准备好的dom，初始化echarts实例
+                                var myChart = echarts.init(document.getElementById('main2'));
+
+                                option = {
+                                    title: {
+                                        subtext: '纯属虚构',
+                                        left: 'left'
+                                    },
+                                    tooltip: {
+                                        trigger: 'item'
+                                    },
+                                    series: [
+                                        {
+                                            name: '访问来源',
+                                            type: 'pie',
+                                            radius: '50%',
+                                            data: [
+                                                { value: 1048, name: '搜索引擎' },
+                                                { value: 735, name: '直接访问' },
+                                                { value: 580, name: '邮件营销' },
+                                                { value: 484, name: '联盟广告' },
+                                                { value: 300, name: '视频广告' }
+                                            ],
+                                            emphasis: {
+                                                itemStyle: {
+                                                    shadowBlur: 10,
+                                                    shadowOffsetX: 0,
+                                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                }
+                                            }
+                                        }
+                                    ]
+                                };
+
+                                // 使用刚指定的配置项和数据显示图表。
+                                myChart.setOption(option);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <div class="well">
+                <div class="panel panel-simple">
+                    <div class="panel-heading">森林的增长</div>
+                    <div class="panel-body">
+                        <div class="nopadding-well">
+                            <div id="main3" style="width: 100%;height:300px;">
+                            </div>
+                            <script type="text/javascript">
+                                // 基于准备好的dom，初始化echarts实例
+                                var myChart = echarts.init(document.getElementById('main3'));
+
+                                var chartDom = document.getElementById('main3');
+                                var myChart = echarts.init(chartDom);
+                                var option;
+
+                                var treeDataURI = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAA2CAYAAADUOvnEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5tJREFUeNrcWE1oE0EUnp0kbWyUpCiNYEpCFSpIMdpLRTD15s2ePHixnj00N4/GoyfTg2fbiwdvvagHC1UQ66GQUIQKKgn1UAqSSFua38b3prPJZDs7s5ufKn0w7CaZ2W/fe9/73kyMRqNB3Nrj1zdn4RJ6du9T2u1a2iHYSxjP4d41oOHGQwAIwSUHIyh8/RA8XeiXh0kLGFoaXiTecw/hoTG4ZCSAaFkY0+BpsZceLtiAoV2FkepZSDk5EpppczBvpuuQCqx0YnkYcVVoqQYMyeCG+lFdaGkXeVOFNu4aEBalOBk6sbQrQF7gSdK5JXjuHXuYVIVyr0TZ0FjKDeCs6km7JYMUdrWAUVmZUBtmRnVPK+x6nIR2xomH06R35ggwJPeofWphr/W5UjPIxq8B2bKgE8C4HVHWvg+2gZjXj19PkdFztY7bk9TDCH/g6oafDPpaoMvZIRI5WyMB/0Hv++HkpTKE0kM+A+h20cPAfN4GuRyp9G+LMTW+z8rCLI8b46XO9zRcYZTde/j0AZm8WGb3Y2F9KLlE2nqYkjFLJAsDOl/lea0q55mqxXcL7YBc++bsCPMe8mUyU2ZIpnCoblca6TZA/ga2Co8PGg7UGUlEDd0ueptglbrRZLLE7poti6pCaWUo2pu1oaYI1CF9b9cCZPO3F8ikJQ/rPpQT5YETht26ss+uCIL2Y8vHwJGpA96GI5mjOlaKhowUy6BcNcgIhDviTGWCGFaqEuufWz4pgcbCh+w0gEOyOjTlTtYYlIWPYWKEsLDzOs+nhzaO1KEpd+MXpOoTUgKiNyhdy5aSMPNVqxtSsJFgza5EWA4zKtCJ2OGbLn0JSLu8+SL4G86p1Fpr7ABXdGFF/UTD4rfmFYFw4G9VAJ9SM3aF8l3yok4/J6IV9sDVb36ynmtJ2M5+CwxTYBdKNMBaocKGV2nYgkz6r+cHBP30MzAfi4Sy+BebSoPIOi8PW1PpCCvr/KOD4k9Zu0WSH0Y0+SxJ2awp/nlwKtcGyHOJ8vNHtRJzhPlsHr8MogtlVtwUU0tSM1x58upSKbfJnSKUR07GVMKkDNfXpzpv0RTHy3nZMVx5IOWdZIaPabGFvfpwpjnvfmJHXLaEvZUTseu/TeLc+xgAPhEAb/PbjO6PBaOTf6LQRh/dERde23zxLtOXbaKNhfq2L/1fAOPHDUhOpIf5485h7l+GNHHiSYPKE3Myz9sFxoJuAyazvwIMAItferha5LTqAAAAAElFTkSuQmCC';
+
+                                var beginYear = 2016;
+                                var endYear = 2025;
+                                var lineCount = 10;
+
+                                // Basic option:
+                                option = {
+                                    color: ['#e54035'],
+                                    xAxis: {
+                                        axisLine: { show: false },
+                                        axisLabel: { show: false },
+                                        axisTick: { show: false },
+                                        splitLine: { show: false },
+                                        name: beginYear,
+                                        nameLocation: 'middle',
+                                        nameGap: 40,
+                                        nameTextStyle: {
+                                            color: 'green',
+                                            fontSize: 20,
+                                            fontFamily: 'Arial'
+                                        },
+                                        min: -2800,
+                                        max: 2800
+                                    },
+                                    yAxis: {
+                                        data: makeCategoryData(),
+                                        show: false
+                                    },
+                                    grid: {
+                                        top: 'center',
+                                        height: 80
+                                    },
+                                    series: [{
+                                        name: 'all',
+                                        type: 'pictorialBar',
+                                        symbol: 'image://' + treeDataURI,
+                                        symbolSize: [30, 55],
+                                        symbolRepeat: true,
+                                        data: makeSeriesData(beginYear),
+                                        animationEasing: 'elasticOut'
+                                    }, {
+                                        name: 'all',
+                                        type: 'pictorialBar',
+                                        symbol: 'image://' + treeDataURI,
+                                        symbolSize: [30, 55],
+                                        symbolRepeat: true,
+                                        data: makeSeriesData(beginYear, true),
+                                        animationEasing: 'elasticOut'
+                                    }]
+                                };
+
+
+                                // Make fake data.
+                                function makeCategoryData() {
+                                    var categoryData = [];
+                                    for (var i = 0; i < lineCount; i++) {
+                                        categoryData.push(i + 'a');
+                                    }
+                                    return categoryData;
+                                }
+
+                                function makeSeriesData(year, negative) {
+                                    // make a fake value just for demo.
+                                    var r = (year - beginYear + 1) * 10;
+                                    var seriesData = [];
+
+                                    for (var i = 0; i < lineCount; i++) {
+                                        var sign = (negative ? -1 * ((i % 3) ? 0.9 : 1) : 1 * (((i + 1) % 3) ? 0.9 : 1));
+                                        seriesData.push({
+                                            value: 0,
+                                            value: sign * (
+                                                year <= beginYear + 1
+                                                    ? (Math.abs(i - lineCount / 2 + 0.5) < lineCount / 5 ? 5 : 0)
+                                                    : (lineCount - Math.abs(i - lineCount / 2 + 0.5)) * r
+                                            ),
+                                            symbolOffset: (i % 2) ? ['50%', 0] : null
+                                        });
+                                    }
+                                    return seriesData;
+                                }
+
+
+
+                                // Set dynamic data.
+                                var currentYear = beginYear;
+                                setInterval(function () {
+                                    currentYear++;
+                                    if (currentYear > endYear) {
+                                        currentYear = beginYear;
+                                    }
+                                    myChart.setOption({
+                                        xAxis: {
+                                            name: currentYear
+                                        },
+                                        series: [{
+                                            data: makeSeriesData(currentYear)
+                                        }, {
+                                            data: makeSeriesData(currentYear, true)
+                                        }]
+                                    });
+                                }, 800);
+
+                                option && myChart.setOption(option);
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="well">
+                <div class="panel panel-simple">
+                    <div class="panel-heading">钟</div>
+                    <div class="panel-body">
+                        <div class="nopadding-well">
+                            <div id="main4" style="width: 100%;height:300px;">
+                            </div>
+                            <script type="text/javascript">
+                                // 基于准备好的dom，初始化echarts实例
+                                var myChart = echarts.init(document.getElementById('main4'));
+
+                                // 指定图表的配置项和数据
+                                option = {
+                                    series: [{
+                                        name: 'hour',
+                                        type: 'gauge',
+                                        startAngle: 90,
+                                        endAngle: -270,
+                                        min: 0,
+                                        max: 12,
+                                        splitNumber: 12,
+                                        axisLine: {
+                                            lineStyle: {
+                                                width: 8,
+                                                color: [
+                                                    [1, 'rgba(0,0,0,0.7)']
+                                                ],
+                                                shadowColor: 'rgba(0, 0, 0, 0.5)',
+                                                shadowBlur: 15
+                                            }
+                                        },
+                                        splitLine: {
+                                            lineStyle: {
+                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                shadowBlur: 3,
+                                                shadowOffsetX: 1,
+                                                shadowOffsetY: 2
+                                            }
+                                        },
+                                        axisLabel: {
+                                            fontSize: 25,
+                                            distance: 25,
+                                            formatter: function (value) {
+                                                if (value === 0) {
+                                                    return '';
+                                                }
+                                                return value;
+                                            }
+                                        },
+                                        anchor: {
+                                            show: false,
+                                            icon: 'path://M532.8,70.8C532.8,70.8,532.8,70.8,532.8,70.8L532.8,70.8C532.7,70.8,532.8,70.8,532.8,70.8z M456.1,49.6c-2.2-6.2-8.1-10.6-15-10.6h-37.5v10.6h37.5l0,0c2.9,0,5.3,2.4,5.3,5.3c0,2.9-2.4,5.3-5.3,5.3v0h-22.5c-1.5,0.1-3,0.4-4.3,0.9c-4.5,1.6-8.1,5.2-9.7,9.8c-0.6,1.7-0.9,3.4-0.9,5.3v16h10.6v-16l0,0l0,0c0-2.7,2.1-5,4.7-5.3h10.3l10.4,21.2h11.8l-10.4-21.2h0c6.9,0,12.8-4.4,15-10.6c0.6-1.7,0.9-3.5,0.9-5.3C457,53,456.7,51.2,456.1,49.6z M388.9,92.1h11.3L381,39h-3.6h-11.3L346.8,92v0h11.3l3.9-10.7h7.3h7.7l3.9-10.6h-7.7h-7.3l7.7-21.2v0L388.9,92.1z M301,38.9h-10.6v53.1H301V70.8h28.4l3.7-10.6H301V38.9zM333.2,38.9v10.6v10.7v31.9h10.6V38.9H333.2z M249.5,81.4L249.5,81.4L249.5,81.4c-2.9,0-5.3-2.4-5.3-5.3h0V54.9h0l0,0c0-2.9,2.4-5.3,5.3-5.3l0,0l0,0h33.6l3.9-10.6h-37.5c-1.9,0-3.6,0.3-5.3,0.9c-4.5,1.6-8.1,5.2-9.7,9.7c-0.6,1.7-0.9,3.5-0.9,5.3l0,0v21.3c0,1.9,0.3,3.6,0.9,5.3c1.6,4.5,5.2,8.1,9.7,9.7c1.7,0.6,3.5,0.9,5.3,0.9h33.6l3.9-10.6H249.5z M176.8,38.9v10.6h49.6l3.9-10.6H176.8z M192.7,81.4L192.7,81.4L192.7,81.4c-2.9,0-5.3-2.4-5.3-5.3l0,0v-5.3h38.9l3.9-10.6h-53.4v10.6v5.3l0,0c0,1.9,0.3,3.6,0.9,5.3c1.6,4.5,5.2,8.1,9.7,9.7c1.7,0.6,3.4,0.9,5.3,0.9h23.4h10.2l3.9-10.6l0,0H192.7z M460.1,38.9v10.6h21.4v42.5h10.6V49.6h17.5l3.8-10.6H460.1z M541.6,68.2c-0.2,0.1-0.4,0.3-0.7,0.4C541.1,68.4,541.4,68.3,541.6,68.2L541.6,68.2z M554.3,60.2h-21.6v0l0,0c-2.9,0-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3l0,0l0,0h33.6l3.8-10.6h-37.5l0,0c-6.9,0-12.8,4.4-15,10.6c-0.6,1.7-0.9,3.5-0.9,5.3c0,1.9,0.3,3.7,0.9,5.3c2.2,6.2,8.1,10.6,15,10.6h21.6l0,0c2.9,0,5.3,2.4,5.3,5.3c0,2.9-2.4,5.3-5.3,5.3l0,0h-37.5v10.6h37.5c6.9,0,12.8-4.4,15-10.6c0.6-1.7,0.9-3.5,0.9-5.3c0-1.9-0.3-3.7-0.9-5.3C567.2,64.6,561.3,60.2,554.3,60.2z',
+                                            showAbove: false,
+                                            offsetCenter: [0, '-35%'],
+                                            size: 120,
+                                            keepAspect: true,
+                                            itemStyle: {
+                                                color: '#707177'
+                                            }
+                                        },
+                                        pointer: {
+                                            icon: 'path://M2.9,0.7L2.9,0.7c1.4,0,2.6,1.2,2.6,2.6v115c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6V3.3C0.3,1.9,1.4,0.7,2.9,0.7z',
+                                            width: 12,
+                                            length: '55%',
+                                            offsetCenter: [0, '8%'],
+                                            itemStyle: {
+                                                color: '#337ab7',
+                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                shadowBlur: 8,
+                                                shadowOffsetX: 2,
+                                                shadowOffsetY: 4
+                                            }
+                                        },
+                                        detail: {
+                                            show: false
+                                        },
+                                        title: {
+                                            offsetCenter: [0, '30%']
+                                        },
+                                        data: [{
+                                            value: 0
+                                        }]
+                                    },
+                                    {
+                                        name: 'minute',
+                                        type: 'gauge',
+                                        startAngle: 90,
+                                        endAngle: -270,
+                                        min: 0,
+                                        max: 60,
+                                        axisLine: {
+                                            show: false
+                                        },
+                                        splitLine: {
+                                            show: false
+                                        },
+                                        axisTick: {
+                                            show: false
+                                        },
+                                        axisLabel: {
+                                            show: false
+                                        },
+                                        pointer: {
+                                            icon: 'path://M2.9,0.7L2.9,0.7c1.4,0,2.6,1.2,2.6,2.6v115c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6V3.3C0.3,1.9,1.4,0.7,2.9,0.7z',
+                                            width: 8,
+                                            length: '70%',
+                                            offsetCenter: [0, '8%'],
+                                            itemStyle: {
+                                                color: '#337ab7',
+                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                shadowBlur: 8,
+                                                shadowOffsetX: 2,
+                                                shadowOffsetY: 4
+                                            }
+                                        },
+                                        anchor: {
+                                            show: true,
+                                            size: 20,
+                                            showAbove: false,
+                                            itemStyle: {
+                                                borderWidth: 15,
+                                                borderColor: '#337ab7',
+                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                shadowBlur: 8,
+                                                shadowOffsetX: 2,
+                                                shadowOffsetY: 4
+                                            }
+                                        },
+                                        detail: {
+                                            show: false
+                                        },
+                                        title: {
+                                            offsetCenter: ['0%', '-40%']
+                                        },
+                                        data: [{
+                                            value: 0
+                                        }]
+                                    },
+                                    {
+                                        name: 'second',
+                                        type: 'gauge',
+                                        startAngle: 90,
+                                        endAngle: -270,
+                                        min: 0,
+                                        max: 60,
+                                        animationEasingUpdate: 'bounceOut',
+                                        axisLine: {
+                                            show: false
+                                        },
+                                        splitLine: {
+                                            show: false
+                                        },
+                                        axisTick: {
+                                            show: false
+                                        },
+                                        axisLabel: {
+                                            show: false
+                                        },
+                                        pointer: {
+                                            icon: 'path://M2.9,0.7L2.9,0.7c1.4,0,2.6,1.2,2.6,2.6v115c0,1.4-1.2,2.6-2.6,2.6l0,0c-1.4,0-2.6-1.2-2.6-2.6V3.3C0.3,1.9,1.4,0.7,2.9,0.7z',
+                                            width: 4,
+                                            length: '85%',
+                                            offsetCenter: [0, '8%'],
+                                            itemStyle: {
+                                                color: '#337ab7',
+                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                shadowBlur: 8,
+                                                shadowOffsetX: 2,
+                                                shadowOffsetY: 4
+                                            }
+                                        },
+                                        anchor: {
+                                            show: true,
+                                            size: 15,
+                                            showAbove: true,
+                                            itemStyle: {
+                                                color: '#337ab7',
+                                                shadowColor: 'rgba(0, 0, 0, 0.3)',
+                                                shadowBlur: 8,
+                                                shadowOffsetX: 2,
+                                                shadowOffsetY: 4
+                                            }
+                                        },
+                                        detail: {
+                                            show: false
+                                        },
+                                        title: {
+                                            offsetCenter: ['0%', '-40%']
+                                        },
+                                        data: [{
+                                            value: 0
+                                        }]
+                                    }]
+                                };
+
+                                var timeUpdatedStatus = {
+                                    second: false,
+                                    minute: false,
+                                    hour: false
+                                };
+
+                                function updateSeries(time, series, type) {
+                                    var isCritical = (Math.floor(time) === 0) || (type === 'second' && time === 1);
+                                    if (isCritical && timeUpdatedStatus[type] === true) {
+                                        timeUpdatedStatus[type] = false;
+                                        series.data[0].value = 0;
+                                        series.clockwise = true;
+                                        option.animationDurationUpdate = 0;
+                                        myChart.setOption(option, true);
+                                    }
+                                    series.data[0].value = time;
+                                    series.clockwise = true;
+                                    if (time === 0) {
+                                        timeUpdatedStatus[type] = true;
+                                        series.clockwise = false;
+                                    }
+                                }
+
+                                setInterval(function () {
+                                    var date = new Date();
+                                    var second = date.getSeconds();
+                                    var minute = date.getMinutes() + second / 60;
+                                    var hour = date.getHours() % 12 + minute / 60;
+
+                                    updateSeries(second, option.series[2], 'second');
+                                    updateSeries(minute, option.series[1], 'minute');
+                                    updateSeries(hour, option.series[0], 'hour');
+
+                                    option.animationDurationUpdate = 300;
+                                    myChart.setOption(option, true);
+                                    date = null;
+                                }, 1000);
+
+                                // 使用刚指定的配置项和数据显示图表。
+                                myChart.setOption(option);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Panel heading</div>
+                    <div class="panel-body">
+                        <p>
+                            Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean
+                            lacinia
+                            bibendum
+                            nulla
+                            sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                            vestibulum.
+                            Nullam
+                            id
+                            dolor id nibh ultricies vehicula ut id elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-info">
+                            <div class="bullet normal"></div>
+                            <div class="date">2021/05/06 19:06:54</div>
+                            <div class="desc">
+                                内容段落2内容段落2内2内容段落2内容段落2内容段落2
+                            </div>
+                        </div>
+                        <div class="timeline-info">
+                            <div class="bullet normal"></div>
+                            <div class="date">2021/05/04 19:06:54</div>
+                            <div class="desc">
+                                内容段落2内容段落2内2内容段落2内容段落2内容段落2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9">
+            <div class="well">
+                <div class="panel panel-simple">
+                    <div class="panel-heading"></div>
+                    <div class="panel-body">
+                        <div class="nopadding-well">
+                            <div class="timeline">
+                                <div class="timeline-line"></div>
+                                <div class="timeline-body">
+                                    <div class="timeline-info timeline-info-info">
+                                        <div class="bullet normal"></div>
+                                        <div class="date">2021/05/06 19:06:54</div>
+                                        <div class="desc">
+
+                                            内容段落2内容段落2内2内容段落2内容段落2内容段落2
+                                            内容段落2内容段落2内容段落2内容段落2
+                                            内容段落2内容段落2内容段落2内容段容段落2内容段落2
+                                            内容段落2内容段落2内容段落2内容段落2
+                                            内容段落2内容段落2内容段落2内容段落2
+                                        </div>
+                                    </div>
+                                    <div class="timeline-info timeline-info-danger">
+                                        <div class="bullet normal"></div>
+                                        <div class="date ">2021/05/06 17:40:00</div>
+                                        <div class="desc">
+                                            内容段落2内容段落2内容段落2内容段落2
+                                        </div>
+                                    </div>
+                                    <div class="timeline-info timeline-info-success">
+                                        <div class="bullet normal "></div>
+                                        <div class="date">2021/05/06 16:50:43</div>
+                                        <div class="desc">
+                                            <blockquote>
+                                                内容段落2内容段落2内容段落2内容段落2
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-info timeline-info-warning">
+                                        <div class="bullet normal "></div>
+                                        <div class="date ">2021/05/05 23:54:12</div>
+                                        <div class="desc">
+                                            <blockquote>
+                                                内容段落2内容段落2内容段落2内容段落2
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-info">
+                                        <div class="bullet"></div>
+                                        <div class="date">2021/05/05 23:54:12</div>
+                                        <div class="desc">
+                                            <img src="./images/1.jpeg" alt="Paris" />
+                                            内容段落2内容段落2内容段落2内容段落2
+                                        </div>
+                                    </div>
+                                    <div class="timeline-info">
+                                        <div class="bullet normal"></div>
+                                        <div class="date">2021/05/05 23:24:30</div>
+                                        <div class="desc">
+                                            <ul>
+                                                <li>Phasellus iaculis neque</li>
+                                                <li>Purus sodales ultricies</li>
+                                                <li>Vestibulum laoreet porttitor sem</li>
+                                                <li>Ac tristique libero volutpat at</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-info">
+                                        <div class="bullet normal"></div>
+                                        <div class="date">2021/05/05 21:49:13</div>
+                                        <div class="desc">
+                                            <table>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>First Name</th>
+                                                    <th>Username</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                    <td>@fat</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td>Larry</td>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-info">
+                                        <div class="bullet normal"></div>
+                                        <div class="date">2021/05/05 23:24:30</div>
+                                        <div class="desc">
+                                            <div class="timeline">
+                                                <div class="timeline-line"></div>
+                                                <div class="timeline-body">
+                                                    <div class="timeline-info">
+                                                        <div class="bullet normal "></div>
+                                                        <div class="date ">2021/05/06 19:06:54</div>
+                                                        <div class="desc">
+
+                                                            内容段落2内容段落2内2内容段落2内容段落2内容段落2
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-info">
+                                                        <div class="bullet normal"></div>
+                                                        <div class="date">2021/05/05 21:49:13</div>
+                                                        <div class="desc">
+                                                            <table>
+                                                                <tr>
+                                                                    <th>#</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Username</th>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Mark</td>
+                                                                    <td>Otto</td>
+                                                                    <td>@mdo</td>
+                                                                    <td>Mark</td>
+                                                                    <td>Otto</td>
+                                                                    <td>@mdo</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Jacob</td>
+                                                                    <td>Thornton</td>
+                                                                    <td>@fat</td>
+                                                                    <td>@fat</td>
+                                                                    <td>Thornton</td>
+                                                                    <td>@fat</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>the Bird</td>
+                                                                    <td>@twitter</td>
+                                                                    <td>Larry</td>
+                                                                    <td>Larry</td>
+                                                                    <td>the Bird</td>
+                                                                    <td>@twitter</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="../dist/js/simple.js"></script>
+<script src="../dist/js/echarts.min.js"></script>
+<script src="../dist/js/html2canvas.min.js"></script>
+
+</html>
