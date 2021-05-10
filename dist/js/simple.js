@@ -13,7 +13,10 @@ function setHTML() {
         var context = canvas2.getContext("2d");
         context.scale(4, 4);
 
-        html2canvas(document.querySelector('html'), { canvas: canvas2 }).then(function (canvas) {
+        html2canvas(document.querySelector('html'), {
+            canvas: canvas2,
+            useCORS: true
+        }).then(function (canvas) {
             document.querySelector(".downHtmlReal").setAttribute('href', canvas.toDataURL());
             document.querySelector(".downHtmlReal").setAttribute('download', "downImg");
             document.querySelector(".downHtmlReal").click();
