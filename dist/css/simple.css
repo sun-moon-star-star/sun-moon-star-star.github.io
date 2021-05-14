@@ -59,19 +59,6 @@ h6 {
     margin: 14px 0;
 }
 
-address {
-    text-align:center;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.address {
-    text-align:center;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 .row {
     display:block;
@@ -507,13 +494,6 @@ li {
 }
 
 address {
-    margin: 20px auto;    
-    text-align: center;
-    font-style: normal;
-    font-size: 14px;
-}
-
-.address {
     margin: 20px auto;    
     text-align: center;
     font-style: normal;
