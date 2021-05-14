@@ -273,8 +273,11 @@ address {
 table {
     min-width: 100%;
     margin: 10px 0;
-    border-collapse: collapse;
     background-color: transparent;
+}
+
+table:not(.table-panel) { 
+    border-collapse: collapse;
 }
 
 th,td {
@@ -284,8 +287,76 @@ th,td {
     padding: 8px 10px;
 }
 
-.word-no-break > th,td {
+table.word-no-break > th,td {
     word-break: normal;
+}
+
+.table-panel {
+    padding: 5px;
+}
+
+.table-panel th,td {
+    vertical-align: top;
+    border: 10px solid #eee;
+    outline: 10px solid #fff;
+    border-top-color: #337ab7;
+    border-top-width: 12px;
+}
+
+.table-panel.table-panel-info td{
+    border-top-color: #337ab7;
+}
+
+.table-panel.table-panel-default td{
+    border-top-color: #ddd;
+}
+
+.table-panel.table-panel-success td{
+    border-top-color: #28a745;
+}
+
+.table-panel.table-panel-warning td{
+    border-top-color: #ffc107;
+}
+
+.table-panel.table-panel-danger td{
+    border-top-color: #be3a3a;
+}
+
+.table-panel tr td:first-child {
+    border-left-width: 2px;
+}
+
+.table-panel tr td:last-child {
+    border-right-width: 2px;
+}
+
+.table-panel tr:first-child td {
+    border-top-width:4px;
+}
+
+.table-panel tr:last-child td {
+    border-bottom-width:2px;
+}
+
+.table-panel td.panel-success {
+    border-top-color: #28a745;
+}
+
+.table-panel td.panel-danger {
+    border-top-color: #be3a3a;
+}
+
+.table-panel td.panel-warning {
+    border-top-color: #ffc107;
+}
+
+.table-panel td.panel-default {
+    border-top-color: #ddd;
+}
+
+.table-panel td.panel-info {
+    border-top-color: #337ab7;
 }
 
 .body-fixed  th,td {
