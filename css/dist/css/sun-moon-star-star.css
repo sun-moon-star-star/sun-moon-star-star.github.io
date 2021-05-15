@@ -739,6 +739,10 @@ html {
 	background: linear-gradient(to bottom, #d9edf7 0%,#d9edf7 50%,white 51%,#ffffff 100%);
 }
 
+.bg-primary .box {
+	background: linear-gradient(to bottom, #337ab7 0%,#337ab7 50%,white 51%,#ffffff 100%);
+}
+
 .bg-danger .box {
 	background: linear-gradient(to bottom, #f2dede 0%,#f2dede 50%,white 51%,#ffffff 100%);
 }
