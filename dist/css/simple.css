@@ -259,7 +259,6 @@ h6 {
 
 table {
     min-width: 100%;
-    margin: 10px 0;
     background-color: transparent;
 }
 
@@ -276,6 +275,35 @@ th,td {
 
 table.word-no-break > th,td {
     word-break: normal;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link.link-danger:hover {
+    color: #be3a3a;   
+}
+
+.link.link-info:hover {
+    color: #337ab7;   
+}
+
+.link.link-default:hover {
+    color: #ddd;   
+}
+
+.link.link-success:hover {
+    color: #28a745;   
+}
+
+.link.link-warning:hover {
+    color: #ffc107;   
 }
 
 .table-panel {
