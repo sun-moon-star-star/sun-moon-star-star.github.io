@@ -455,6 +455,12 @@ li {
     color: inherit;
 }
 
+.panel-body blockquote {
+    text-align: right;
+    color: #808080;
+    font-size: 4px;
+}
+
 .panel-body {
     padding: 0px 15px 0px;
 }
