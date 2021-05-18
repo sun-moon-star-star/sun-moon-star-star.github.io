@@ -41,14 +41,19 @@ html {
 	margin-left: auto;
 }
 
+.well + .well {
+	padding: 5px;
+}
+
 .in-well {
+	box-sizing: border-box;
+	padding: 5px;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 }
 
 .well {
 	background-color: #eee;
-	margin: 10px;
 	box-sizing: border-box;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
@@ -56,7 +61,6 @@ html {
 
 .well-white {
 	background-color: #fff;
-	margin: 10px;
 	box-sizing: border-box;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
@@ -144,6 +148,7 @@ html {
 	box-sizing: border-box;
 	position: relative;
 	min-height: 1px;
+	padding: 5px;
 }
 
 .col-xs-1,
@@ -954,7 +959,6 @@ strong + p {
 
 table {
 	min-width: 100%;
-	margin: 10px 0;
 	background-color: transparent;
 	border-collapse: collapse;
 }
@@ -989,11 +993,13 @@ td {
 }
 
 ul {
+	box-sizing: border-box;
 	padding-left: 0;
 	margin: 0px;
 }
 
 li {
+	box-sizing: border-box;
 	position: relative;
 	display: block;
 	padding: 8px 15px;
@@ -1004,4 +1010,63 @@ li {
 
 .no-padding-li {
 	padding: 0px;
+}
+
+input,select,button,textarea {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	padding: 8px;
+	border-radius: 5px;
+	margin: 3px;
+}
+
+button {
+	background-color: #fff;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #ececec;
+}
+
+button.bg-primary {
+	color: #fff;
+	background-color: #337ab7;
+}
+
+button.bg-primary:hover {
+	background-color: #1d629e;
+}
+
+button.bg-success {
+	color: #fff;
+	background-color: #28a745;
+}
+
+button.bg-success:hover {
+	background-color: #1c8a35;
+}
+
+button.bg-danger {
+	color: #fff;
+	background-color: #c23838;
+}
+
+button.bg-danger:hover {
+	background-color: #a52525;
+}
+
+button.bg-warning {
+	color: #fff;
+	background-color: #ffc107;
+}
+
+button.bg-warning:hover {
+	background-color: #f1b606;
+}
+
+textarea {
+	width: 100%;
+
 }
