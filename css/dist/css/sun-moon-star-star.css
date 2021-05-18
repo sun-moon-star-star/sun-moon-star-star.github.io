@@ -41,27 +41,22 @@ html {
 	margin-left: auto;
 }
 
-.well + .well {
-	margin-top: 10px;
+.padding-5px {
 	padding: 5px;
+}
+
+.padding-10px {
+	padding: 10px;
 }
 
 .in-well {
 	box-sizing: border-box;
-	padding: 5px;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 }
 
 .well {
 	background-color: #eee;
-	box-sizing: border-box;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
-}
-
-.well-white {
-	background-color: #fff;
 	box-sizing: border-box;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
@@ -1000,11 +995,11 @@ ul {
 }
 
 li {
+	margin: 0px;
 	box-sizing: border-box;
 	position: relative;
 	display: block;
 	padding: 8px 15px;
-	margin-bottom: -1px;
 	background-color: #fff;
 	border: 1px solid #ddd;
 }
@@ -1069,4 +1064,124 @@ button.bg-warning:hover {
 textarea {
 	width: 100%;
 
+}
+
+@keyframes basemove-from-top {
+	from {
+		bottom: 200px;
+	}
+
+	to {
+		bottom: 0px;
+	}
+}
+
+@-webkit-keyframes basemove-from-top {
+	from {
+		bottom: 200px;
+	}
+
+	to {
+		bottom: 0px;
+	}
+}
+
+.basemove-from-top  {
+	animation: basemove-from-top 0.8s linear infinite normal;
+	-webkit-animation: basemove-from-top 0.8s linear infinite normal;
+	animation-iteration-count:1; 
+	position: relative;
+}
+
+@keyframes basemove-from-bottom {
+	from {
+		top: 200px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
+@-webkit-keyframes basemove-from-bottom {
+	from {
+		top: 200px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
+.basemove-from-bottom  {
+	animation: basemove-from-bottom 0.8s linear infinite normal;
+	-webkit-animation: basemove-from-bottom 0.8s linear infinite normal;
+	animation-iteration-count:1; 
+	position: relative;
+}
+
+@keyframes basemove-from-left {
+	from {
+		right: 200px;
+	}
+
+	to {
+		right: 0px;
+	}
+}
+
+@-webkit-keyframes basemove-from-left {
+	from {
+		right: 200px;
+	}
+
+	to {
+		right: 0px;
+	}
+}
+
+.basemove-from-left  {
+	animation: basemove-from-left 0.8s linear infinite normal;
+	-webkit-animation: basemove-from-left 0.8s linear infinite normal;
+	animation-iteration-count:1; 
+	position: relative;
+}
+
+@keyframes basemove-from-right {
+	from {
+		left: 200px;
+	}
+
+	to {
+		left: 0px;
+	}
+}
+
+@-webkit-keyframes basemove-from-right {
+	from {
+		left: 200px;
+	}
+
+	to {
+		left: 0px;
+	}
+}
+
+.basemove-from-right  {
+	animation: basemove-from-right 0.8s linear infinite normal;
+	-webkit-animation: basemove-from-right 0.8s linear infinite normal;
+	animation-iteration-count:1; 
+	position: relative;
+}
+
+.input-group {
+	padding: 5px 10px;
+}
+
+.input-group-top {
+	padding: 10px 10px 5px 10px;
+}
+
+.input-group-bottom {
+	padding: 5px 10px 10px 10px;
 }

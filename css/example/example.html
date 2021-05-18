@@ -229,11 +229,28 @@
                 <div class="panel-heading panel-heading-well">
                     <div class="row">
                         <img src="../../data/rongming_lu.jpg" class="img-radius" style="width: 30px;">
-                        <strong class="well-white">sun-moon-star-star</strong>
+                        <strong class="well bg-white">sun-moon-star-star</strong>
                     </div>
                     <br>
+                    <div class=" row">
+                        <div class="well bg-white">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at
+                            <br> <br>
+                            the coast of the Semantics, a large language ocean. A small river named Duden flows by
+                            their
+                            place and supplies it with the necessary regelialia. It is a paradisematic country, in
+                        </div>
+                    </div>
+                    <br>
+                    <br>
                     <div class="row">
-                        <div class="well-white">
+                        <img src="../../data/rongming_lu.jpg" class="img-radius" style="width: 30px;">
+                        <strong class="well bg-white">sun-moon-star-star</strong>
+                    </div>
+                    <br>
+                    <div class=" row">
+                        <div class="well bg-white">
                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live in Bookmarksgrove right at
                             <br> <br>
@@ -251,10 +268,28 @@
                 <div class="panel-heading panel-heading-well">
                     <div class="row">
                         <img src="../../data/rongming_lu.jpg" class="img-radius" style="width: 30px;">
-                        <strong class="well-white">sun-moon-star-star</strong>
+                        <strong class="well bg-white">sun-moon-star-star</strong>
                     </div>
+                    <div class=" row">
+                        <div class="well bg-white" style="padding-left: 32px;">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at
+                            <br> <br>
+                            the coast of the Semantics, a large language ocean. A small river named Duden flows by
+                            their
+                            place and supplies it with the necessary regelialia. It is a paradisematic country, in
+                            which
+                            roasted parts of sentences fly into your mouth.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading panel-heading-well">
                     <div class="row">
-                        <div class="well-white" style="padding-left: 32px;">
+                        <img src="../../data/rongming_lu.jpg" class="img-radius" style="width: 30px;">
+                        <strong class="well bg-white">sun-moon-star-star</strong>
+                    </div>
+                    <div class=" row">
+                        <div class="well bg-white" style="padding-left: 32px;">
                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live in Bookmarksgrove right at
                             <br> <br>
@@ -338,29 +373,28 @@
             </ul>
         </div>
         <div class="panel well">
-            <div class="in-well">
+            <div class="input-group-top">
                 <input type="text">
                 <button>Submit</button>
-
             </div>
-            <div class="in-well">
+            <div class="input-group">
                 <input type="text">
                 <input type="text">
             </div>
-            <div class="in-well">
+            <div class="input-group">
                 <button class="bg-primary">primary</button>
                 <button class="bg-success">success</button>
                 <button class="bg-danger">danger</button>
                 <button class="bg-warning">warning</button>
             </div>
-            <div class="in-well">
+            <div class="input-group">
                 <select>
                     <option value="1">lurongming</option>
                     <option value="1">zhaolu</option>
                     <option value="1">sun-moon-star-star</option>
                 </select>
             </div>
-            <div class="in-well">
+            <div class="input-group-bottom">
                 <textarea rows="3">
             </textarea>
             </div>
@@ -371,7 +405,7 @@
     <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="well">
             <div class="panel">
-                <div class="well-white">
+                <div class="well bg-white">
                     <div class="timeline">
                         <div class="timeline-line"></div>
                         <div class="timeline-body">
@@ -448,7 +482,7 @@
                             }
                         </script>
                         <div class="in-well" id="show" style="display: none;padding-top:10px;">
-                            <table>
+                            <table class="basemove-from-top in-well">
                                 <tr>
                                     <th>#</th>
                                     <th>First Name</th>
@@ -508,20 +542,8 @@
                     <button
                         onclick="document.getElementById('test1').style.display='none';document.getElementById('test2').style.display='block';">&gt</button>
                 </div>
-                <style>
-                    @keyframes myimg {
-                        from {
-                            left: 200px;
-                        }
-
-                        to {
-                            left: 0px;
-                        }
-                    }
-                </style>
-                <div class="panel-body" style="height:100%; overflow: hidden;">
-                    <div class="in-well" id="test1"
-                        style="display:none;animation: myimg 0.8s linear infinite normal;animation-iteration-count:1; position: relative;">
+                <div class="panel-body in-well">
+                    <div class="in-well basemove-from-top" id="test1" style="display:none;">
                         <table>
                             <tr>
                                 <th>#</th>
@@ -561,8 +583,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="in-well" id="test2"
-                        style="animation: myimg 0.8s linear infinite normal; animation-iteration-count:1;position: relative;">
+                    <div class="in-well basemove-from-left" id="test2">
                         <ul>
                             <li>Purus sodales ultricies</li>
                             <li>Vestibulum laoreet porttitor sem</li>
