@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../dist/css/sun-moon-star-star.css">
+    <script src="../../dist/js/sun-moon-star-star.js"></script>
+</head>
+
+<body class="container-fluid" style="min-width:1200px;" id="body">
+    <div class="row">
+        <div class="padding-5px" style="position:relative;box-sizing:border-box;width:100%;height:auto;margin:0px;">
+            <div class="in-well" style="float:right;">
+                <button class="bg-primary"
+                    onclick="window.location.href = './template.html'">&nbsp&nbsp模板&nbsp&nbsp</button>
+                <button class="bg-primary"
+                    onclick="window.location.href = './smtp.html'">&nbsp&nbsp邮件&nbsp&nbsp</button>
+                <button class="bg-primary">&nbsp&nbspAPI接口&nbsp&nbsp</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="padding-5px"
+            style="float:left;position:relative;box-sizing:border-box;width:20%;height:auto;margin:0px;">
+            <div class="in-well">
+                <div class="panel-top">
+                    <ul id="bar" style="height:100px;">
+                        <li class="center">
+                            <h3 id="email_show"></h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong id="count_show">...</strong>
+                                    <p class="link">Count</p>
+                                </div>
+                                <div class="col-6">
+                                    <strong id="pending_show">...</strong>
+                                    <p class="link">Pending</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="link" onclick="func(this);" data-show-id='show'>ROI维度数据生效率统计
+                            </label>
+                            <script type="text/javascript">
+                                function func(obj) {
+                                    id = obj.getAttribute('data-show-id');
+                                    if (document.getElementById(id).style.display == 'none') {
+                                        document.getElementById(id).style.display = 'block';
+                                    } else {
+                                        document.getElementById(id).style.display = 'none';
+                                    }
+                                }
+                            </script>
+                            <style>
+                            </style>
+                            <div class="in-well" id="show" style="display: none;padding-top:10px;">
+                                <div class="basemove-from-top-quick in-well">
+                                    <ul class="well click" style="max-height: 350px;">
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="link" onclick="func(this);" data-show-id='show3'>ROI维度数据生效率统计
+                            </label>
+                            <script type="text/javascript">
+                                function func(obj) {
+                                    id = obj.getAttribute('data-show-id');
+                                    if (document.getElementById(id).style.display == 'none') {
+                                        document.getElementById(id).style.display = 'block';
+                                    } else {
+                                        document.getElementById(id).style.display = 'none';
+                                    }
+                                }
+                            </script>
+                            <style>
+                            </style>
+                            <div class="in-well" id="show3" style="display: none;padding-top:10px;">
+                                <div class="basemove-from-top-quick in-well">
+                                    <ul class="well click" style="max-height: 350px;">
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="link" onclick="func(this);" data-show-id='show2'>ROI维度数据生效率统计
+                            </label>
+                            <script type="text/javascript">
+                                function func(obj) {
+                                    id = obj.getAttribute('data-show-id');
+                                    if (document.getElementById(id).style.display == 'none') {
+                                        document.getElementById(id).style.display = 'block';
+                                    } else {
+                                        document.getElementById(id).style.display = 'none';
+                                    }
+                                }
+                            </script>
+                            <style>
+                            </style>
+                            <div class="in-well" id="show2" style="display: none;padding-top:10px;">
+                                <div class="basemove-from-top-quick in-well">
+                                    <ul class="well click" style="max-height: 350px;">
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text_limit_two_line">
+                                                00:29 生效率计算公式：生效率=MIS生效的数据量级/（推送总量级-无diff部分）× 100%，其中被质控拦截的数据记为不生效数据。
+                                                数据统计区间为：当天00：00-24：00。
+                                                统计逻辑:
+                                                当日接入的数据如果在当日没有处理完成，则当日不统计，计入第二日生效统计（如果第二日处理成功记作生效，如果处理失败或处理没有完成记作不生效）。
+                                                本页面下载链接有效日期：2021-05-21 15:53:46 - 2021-05-26 15:53:46 。
+                                                文件下载预计需要等待3-30min，请耐心等待。
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+                parent.document.getElementById('bar').style.height = (window.innerHeight - 80).toString().concat("px");
+            </script>
+        </div>
+
+        <div class="padding-5px" style="float:left;position:relative;box-sizing:border-box;width:80%;">
+            <div class="in-well">
+                <div class="panel">
+                    <iframe frameborder="0" src="https://www.baidu.com/" width="100%">
+                    </iframe>
+                    <script type="text/javascript">
+                        parent.document.querySelectorAll("iframe")[0].height = window.innerHeight - 80;
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    SMTPInit();
+</script>
+
+</html>

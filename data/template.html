@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)file:///Users/lurongming/sun-moon-star-star/sun-moon-star-star.github.io/css/example/smtp/template.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./template_files/sun-moon-star-star.css">
+    <script src="./template_files/sun-moon-star-star.js"></script>
+
+</head>
+
+<body class="container-fluid" style="min-width:1200px;">
+    <div class="row">
+        <div class="padding-5px" style="position:relative;box-sizing:border-box;width:100%;height:auto;margin:0px;">
+            <div class="in-well" style="float:right;">
+                <button class="bg-primary" onclick="window.location.href = &#39;./template.html&#39;">&nbsp;&nbsp;模板&nbsp;&nbsp;</button>
+                <button class="bg-primary" onclick="window.location.href = &#39;./smtp.html&#39;">&nbsp;&nbsp;邮件&nbsp;&nbsp;</button>
+                <button class="bg-primary">&nbsp;&nbsp;API接口&nbsp;&nbsp;</button>
+            </div>
+            <div class="in-well" style="float:left;">
+                <button class="bg-primary" id="new_template" onclick="NewTemplate()">&nbsp;&nbsp;新增模板&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="templates">
+        <div class="col-3">
+            <div class="panel-left well ">
+                <div class="center">
+                    <h2>Good Coder</h2>
+                    <button class="sm-button" onclick="Toggle(&#39;roi-show&#39;)">展开</button>
+                </div>
+                <div id="roi-show" style="display: none;">
+                    <div class="in-well padding-10px center">
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">名称</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">唯一标识</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">发件人</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">调度周期</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">管理员</label>
+                            <textarea spellcheck="false" rows="3" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">收件人</label>
+                            <textarea spellcheck="false" rows="5" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <input name="Fruit" type="checkbox" value="">暂停调度
+                            <input name="Fruit" type="checkbox" value="">只发送最新的
+                            <input name="Fruit" type="checkbox" value="">邮件合并
+                        </div>
+                        <div class="input-group">
+                            <button class="sm-button" onclick="Toggle(&#39;roi-show&#39;)">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="panel-left well ">
+                <div class="center">
+                    <h2>Good Coder</h2>
+                    <button class="sm-button" onclick="Toggle(&#39;roi-show2&#39;)">展开</button>
+                </div>
+                <div id="roi-show2" style="display: none;">
+                    <div class="in-well padding-10px center">
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">名称</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">唯一标识</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">发件人</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">调度周期</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">管理员</label>
+                            <textarea spellcheck="false" rows="3" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">收件人</label>
+                            <textarea spellcheck="false" rows="5" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <input name="Fruit" type="checkbox" value="">暂停调度
+                            <input name="Fruit" type="checkbox" value="">只发送最新的
+                            <input name="Fruit" type="checkbox" value="">邮件合并
+                        </div>
+                        <div class="input-group">
+                            <button class="sm-button" onclick="Toggle(&#39;roi-show2&#39;)">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="panel-left well ">
+                <div class="center">
+                    <h2>Good Coder</h2>
+                    <button class="sm-button" onclick="Toggle(&#39;roi-show3&#39;)">展开</button>
+                </div>
+                <div id="roi-show3" style="display: none;">
+                    <div class="in-well padding-10px center">
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">名称</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">唯一标识</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">发件人</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">调度周期</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">管理员</label>
+                            <textarea spellcheck="false" rows="3" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">收件人</label>
+                            <textarea spellcheck="false" rows="5" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <input name="Fruit" type="checkbox" value="">暂停调度
+                            <input name="Fruit" type="checkbox" value="">只发送最新的
+                            <input name="Fruit" type="checkbox" value="">邮件合并
+                        </div>
+                        <div class="input-group">
+                            <button class="sm-button" onclick="Toggle(&#39;roi-show3&#39;)">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="panel-left well ">
+                <div class="center">
+                    <h2>Good Coder</h2>
+                    <button class="sm-button" onclick="Toggle(&#39;roi-show4&#39;)">展开</button>
+                </div>
+                <div id="roi-show4" style="display: none;">
+                    <div class="in-well padding-10px center">
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">名称</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">唯一标识</label>
+                            <input type="text" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">发件人</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">调度周期</label>
+                            <input type="text" size="35" style="float:right; width:80%;">
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">管理员</label>
+                            <textarea spellcheck="false" rows="3" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label style="float:left; width:20%;">收件人</label>
+                            <textarea spellcheck="false" rows="5" style="float:right; width:80%;"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <input name="Fruit" type="checkbox" value="">暂停调度
+                            <input name="Fruit" type="checkbox" value="">只发送最新的
+                            <input name="Fruit" type="checkbox" value="">邮件合并
+                        </div>
+                        <div class="input-group">
+                            <button class="sm-button" onclick="Toggle(&#39;roi-show4&#39;)">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-3"><div class="panel-left well ">&lt; div class="center" &gt;<h2>Good Coder</h2><button class="sm-button" onclick="Toggle(&#39;roi-show-new&#39;)">展开</button></div><div id="roi-show-new" style="display: none;"><div class="in-well padding-10px center"><div class="input-group"><label style="float:left; width:20%;">名称</label><input type="text" style="float:right; width:80%;"></div><div class="input-group"><label style="float:left; width:20%;">唯一标识</label><input type="text" style="float:right; width:80%;"></div><div class="input-group"><label style="float:left; width:20%;">发件人</label><input type="text" size="35" style="float:right; width:80%;"></div><div class="input-group"><label style="float:left; width:20%;">调度周期</label><input type="text" size="35" style="float:right; width:80%;"></div><div class="input-group"><label style="float:left; width:20%;">管理员</label><textarea spellcheck="false" rows="3" style="float:right; width:80%;"></textarea></div><div class="input-group"><label style="float:left; width:20%;">收件人</label><textarea spellcheck="false" rows="5" style="float:right; width:80%;"></textarea></div><div class="input-group"><input name="Fruit" type="checkbox" value="">暂停调度<input name="Fruit" type="checkbox" value="">只发送最新的<input name="Fruit" type="checkbox" value="">邮件合并</div><div class="input-group"><button class="sm-button" onclick="Toggle(&#39;roi-show-new&#39;)">提交</button></div></div></div></div></div>
+    
+
+
+</body></html>
