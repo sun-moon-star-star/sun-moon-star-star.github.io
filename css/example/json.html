@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../dist/css/sun-moon-star-star.css">
+    <script src="../dist/js/sun-moon-star-star.js"></script>
+</head>
+
+
+<body class="container-fluid">
+
+</body>
+
+<script>
+    function output(inp) {
+        pre = document.createElement('pre');
+        pre.innerHTML = inp;
+        document.body.appendChild(pre);
+    }
+
+    var obj = {
+        num: 1234,
+        str: '字符串',
+        arr: [1, 2, 3, 4, 5, 6],
+        obj: {
+            name: 'tom',
+            age: 10,
+            like: ['a', 'b']
+        },
+        she: true,
+        he: null,
+    };
+
+    output(jsonSyntaxHighlight(obj));
+</script>
+
+</html>

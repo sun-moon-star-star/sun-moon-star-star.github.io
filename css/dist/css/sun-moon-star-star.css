@@ -1347,3 +1347,23 @@ textarea {
 	overflow: hidden;
 }
 
+.json-key {
+	color: rgb(17, 41, 182);
+}
+
+.json-number {
+	color: #1c8a35;
+}
+
+.json-string {
+	color: #c23838;
+}
+
+.json-boolean {
+	color: #bb9629;
+}
+
+.json-null {
+	color: #bb9629;
+}
+
