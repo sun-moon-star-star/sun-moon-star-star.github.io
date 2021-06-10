@@ -1,0 +1,95 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 20px;
+}
+
+table {
+    min-width: 100%;
+    margin: 10px 0;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+li + li {
+     margin: 8px 0px;
+}
+
+li + ul,
+ul + li,
+li + ol,
+ol + li {
+    margin-top: 10px;
+}
+
+th,
+td {
+    font-size: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+}
+
+hr {
+    margin: 10px 0px 30px 0px;
+}
+
+blockquote {
+    margin: 20px;
+    padding: 10px;
+    border: 0px solid #ddd;
+    border-left-color: #ddd;
+    border-left-width: 5px;
+}
+
+td.limit {
+    max-width:80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 35px;
+}
+
+h3 {
+    font-size: 26px;
+    margin: 30px;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 25px;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 20px;
+}
+
+h6 {
+    font-size: 14px;
+    margin: 15px;
+}
+
+address {
+    margin: 50px auto;
+    text-align: center;
+    font-style: normal;
+    font-size: 14px;
+}
