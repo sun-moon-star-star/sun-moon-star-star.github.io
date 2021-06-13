@@ -1007,6 +1007,10 @@ strong + p {
 	font-size: 0.75em;
 }
 
+.text-black {
+	color: #000;
+}
+
 .timeline-info-success .date {
 	padding-right: 2em;
 	box-sizing: border-box;
