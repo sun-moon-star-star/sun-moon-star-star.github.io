@@ -48,13 +48,19 @@ td.limit {
     max-width:80px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.center,
+.center * {
     text-align: center;
+}
+
+.left,
+.left * {
+    text-align: left;
+}
+
+.right,
+.right * {
+    text-align: right;
 }
 
 h1 {
@@ -88,8 +94,11 @@ h6 {
 }
 
 address {
-    margin: 50px auto;
-    text-align: center;
+    margin: 60px auto;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+hr {
+    color: #eee;
 }
