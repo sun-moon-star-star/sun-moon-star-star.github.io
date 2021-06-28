@@ -1371,3 +1371,12 @@ textarea {
 	color: #bb9629;
 }
 
+.json-button {
+	cursor: pointer;
+	padding: 0px 5px;
+	font-weight: 4000;
+}
+
+.json-button:hover {
+	background-color: #c6e8fa;
+}
